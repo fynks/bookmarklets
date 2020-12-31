@@ -10,3 +10,11 @@ javascript:window.location='https://developers.google.com/speed/pagespeed/insigh
 ```
 javascript:void(open('https://translate.google.co.in/translate?hl=en&sl=sq&tl=en&u='+location.href));
 ```
+### Sticky header remover
+```
+javascript:(function() {    document.querySelectorAll('*').forEach(function(n) {        var p = getComputedStyle(n).getPropertyValue('position');        if (p === 'fixed' || p === 'sticky') {            n.style.cssText += ' ; position: absolute !important;';        }    });})();
+```
+### Website diguiser
+```
+javascript:(function() { setInterval(function() { var link = document.querySelector("link[rel*='icon']") || document.createElement('link'); link.type = 'image/x-icon'; link.rel = 'shortcut icon'; link.href = 'https://www.google.com/s2/favicons?domain=google.com'; document.getElementsByTagName('head')[0].appendChild(link); document.title = "Google"; console.log("Stealth Activated");; }, 1000); })();
+```
