@@ -1,4 +1,3 @@
-## Bookmarklets
 [![Repo-name](https://img.shields.io/badge/Visit-configs-lightblue?style=for-the-badge&logo=github) ](https://github.com/fynks/configs)
 [ ![Author-Fynks](https://img.shields.io/badge/Author-Fynks-yellow?style=for-the-badge&logo=atom)](#)
 
